@@ -684,6 +684,7 @@ int main(int argc, const char **argv) {
     argc -= i;
     argv += i;
 
+    //read latency from
     config.latency = zmalloc(sizeof(long long)*config.requests);
 
     if (config.keepalive == 0) {
